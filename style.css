@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background: #585c68;
+	font-size: 14px;
+	height: 22px;;
+	color: #555555;
+}
+
+.bold{
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.semi_bold{
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.CV{
+	width: 800px;
+	height: auto;
+	display: flex;
+	margin: 50px auto;
+
+}
+
+.CV .CV_left{
+	width: 280px; 
+	background: #079f37;
+}
+
+.CV .CV_left .CV_profile{
+	width: 100%;
+	height: 280px;
+}
+
+.CV .CV_left .CV_profile img{
+	width: 100%;
+	height: 100%;
+}
+
+.CV .CV_left .CV_content{
+	padding: 0 25px;
+}
+
+.CV .title{
+	margin-bottom: 20px;
+}
+
+.CV .CV_left .bold{
+	color: #fff;
+}
+
+.CV .CV_left .regular{
+	color: #006b00;
+}
+
+.CV .CV_item{
+	padding: 25px 0;
+	border-bottom: 2px solid #ffffff;
+}
+
+.CV .CV_left .CV_item:last-child,
+.CV .CV_right .CV_item:last-child{
+	border-bottom: 0px;
+}
+
+.CV .CV_left ul li{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.CV .CV_left ul li:last-child{
+	margin-bottom: 0px;
+}
+
+.CV .CV_left ul li .icon{
+	width: 35px;
+	height: 35px;
+	background: #fff;
+	color: #006000;
+	border-radius:50%;
+	margin-right:15px;
+	font-size:16px;
+	position: relative;
+}
+
+.CV .CV_left .icon i{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.CV .CV_left ul li .data{
+	color: #0ce734;
+}
+
+.CV .CV_left .CV_skills ul li {
+	color: #0ce734;
+	justify-content: space-between;
+}
+
+.CV .CV_left .CV_skills ul li .Skill_name{
+	width: 50%;
+}
+
+.CV .CV_left .CV_skills ul li .skill_progress{
+	position: relative;
+}
+
+.CV .CV_left .CV_skills ul li .skill_per{
+	width: 15%;
+}
+
+.CV .CV_right{
+	width: 520px;
+	background: #aae6bd;
+	padding: 25px;
+}
+
+.CV .CV_right .bold{
+	color: #0e8f39;
+}
+
+.CV .CV_right .semi_bold{
+	font-weight: 400px;
+}
+
+.CV .CV_right .CV_education ul{
+	padding-left: 2px;
+	overflow: hidden;
+}
+.CV .CV_right .CV_experiences ul{
+	padding-left: 2px;
+	overflow: hidden;
+}
+
+.CV .CV_right ul li{
+	position: relative;
+}
+
+.CV .CV_right ul li .info{
+	margin-bottom: 10px;
+}
+
+.CV .CV_right ul li:last-child .info{
+    margin-bottom: 0;
+}
+
+.CV .CV_right .CV_education ul li:before,
+.CV .CV_right .CV_experiences ul:before{
+	content: "";
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+.CV .CV_right .CV_interests ul{
+	display: flex;
+	justify-content: space-between;
+}
+
+.CV .CV_right .CV_interests ul li i{
+	font-size: 50px;
+}
+
+.CV .CV_right .CV_interests ul li{
+	position: relative;
+	color: #006000;
+	padding-top: 50px;
+}
